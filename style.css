@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.converter {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.currency-box {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.currency-box > div {
+    flex: 1;
+}
+
+#swapButton {
+    width: 45px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#convertButton {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#convertButton:hover {
+    background: #444;
+}
+
+#swapButton:hover {
+    background: #ddd;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 18px;
+    background: #f4f6f8;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+@media (max-width: 500px) {
+
+    .converter {
+        padding: 20px;
+    }
+
+    .currency-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #swapButton {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
